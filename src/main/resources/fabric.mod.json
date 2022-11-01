@@ -3,8 +3,8 @@
   "id": "onebarmcci",
   "version": "${version}",
 
-  "name": "OneBar MCCI Compat",
-  "description": "Disables OneBar when necessary on MCC Island",
+  "name": "OneBar + MCC Island Compat",
+  "description": "Disables OneBar when you have no health bar on MCC Island",
   "authors": [
     "FayneAldan"
   ],

@@ -8,12 +8,9 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 
 import net.minecraft.client.world.ClientWorld;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Environment(EnvType.CLIENT)
 public class OneBarMCCI implements ClientModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger("onebarmcci");
     private static final MinecraftClient client = MinecraftClient.getInstance();
 
     @Override
@@ -28,7 +25,7 @@ public class OneBarMCCI implements ClientModInitializer {
             return false;
         
         GameState state = GameTracker.INSTANCE.getGameState();
-        if (state == GameState.ACTIVE || state == GameState.WAITING_FOR_GAME)
+        if (state == GameState.ACTIVE)
             return true;
 
         return false;
