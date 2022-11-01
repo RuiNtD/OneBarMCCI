@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "onebarmcci",
+  "version": "${version}",
+
+  "name": "OneBar MCCI Compat",
+  "description": "Disables OneBar when necessary on MCC Island",
+  "authors": [
+    "FayneAldan"
+  ],
+  "contact": {
+    "website": "https://FayneAldan.github.io/OneBarMCCI",
+    "repo": "https://github.com/FayneAldan/OneBarMCCI"
+  },
+
+  "license": "MIT",
+  "icon": "assets/onebarmcci/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.faynealdan.onebarmcci.OneBarMCCI"
+    ]
+  },
+  "mixins": [
+    "onebarmcci.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "onebar": ">=3.3.0"
+  }
+}
