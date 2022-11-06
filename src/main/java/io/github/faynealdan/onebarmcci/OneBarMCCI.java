@@ -1,6 +1,6 @@
 package io.github.faynealdan.onebarmcci;
 
-import dev.andante.mccic.api.client.game.GameTracker;
+import dev.andante.mccic.api.client.tracker.GameTracker;
 import dev.andante.mccic.api.game.GameState;
 import net.minecraft.client.MinecraftClient;
 import net.fabricmc.api.ClientModInitializer;
