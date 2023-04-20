@@ -6,11 +6,12 @@
   "name": "OneBar + MCC Island Compat",
   "description": "Disables OneBar when you have no health bar on MCC Island",
   "authors": [
-    "FayneAldan"
+    "RuiNtD"
   ],
   "contact": {
-    "website": "https://FayneAldan.github.io/OneBarMCCI",
-    "repo": "https://github.com/FayneAldan/OneBarMCCI"
+    "homepage": "https://modrinth.com/mod/onebarmcci",
+    "sources": "https://github.com/RuiNtD/OneBarMCCI",
+    "issues": "https://github.com/RuiNtD/OneBarMCCI/issues"
   },
 
   "license": "MIT",
@@ -19,17 +20,23 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "io.github.faynealdan.onebarmcci.OneBarMCCI"
+      "io.github.ruintd.onebarmcci.OneBarMCCI"
     ]
   },
-  "mixins": [
-    "onebarmcci.mixins.json"
-  ],
 
   "depends": {
-    "fabricloader": ">=0.14.10",
-    "fabric": "*",
-    "minecraft": "1.19.2",
-    "onebar": ">=3.3.0"
+    "fabricloader": ">=0.14.19",
+    "minecraft": "~1.19.4",
+    "java": ">=17",
+    "fabric-api": "*",
+    "onebar": ">=3.6.1"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/onebarmcci"
+      }
+    }
   }
 }

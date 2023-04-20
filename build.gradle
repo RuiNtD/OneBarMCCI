@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.0-SNAPSHOT'
+    id 'fabric-loom' version '1.1-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -20,11 +20,6 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
-    maven {
-        name = 'Andante'
-        url  = 'http://54.39.69.117:8080/releases/'
-        allowInsecureProtocol = true
-    }
 }
 
 dependencies {
@@ -34,7 +29,6 @@ dependencies {
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "maven.modrinth:onebar:${project.onebar_version}"
-    include modApi("dev.andante.mccic:mccic-api:${project.mccic_api_version}")
 
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")
